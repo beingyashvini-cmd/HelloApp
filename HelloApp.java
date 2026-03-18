@@ -1,6 +1,9 @@
 public class HelloApp {
     public static void main(String[] args) {
-        // Output text to the console as per UC1 requirements
-        System.out.println("Hello World");
+        if (args.length > 0) {
+            System.out.println("Hello " + args[0]);
+        } else {
+            System.out.println("Hello");
+        }
     }
 }
