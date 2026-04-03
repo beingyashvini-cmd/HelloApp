@@ -3,15 +3,8 @@ public class HelloApp {
 
         if (args.length > 0) {
 
-            String result = "";
-
-            // Enhanced for loop
-            for (String name : args) {
-                result += name + ", ";
-            }
-
-            // Remove last ", " using substring
-            result = result.substring(0, result.length() - 2);
+            // Join all names with ", "
+            String result = String.join(", ", args);
 
             System.out.println("Hello " + result);
 
